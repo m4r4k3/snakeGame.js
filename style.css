@@ -1,0 +1,44 @@
+*{
+    margin:0 ;
+    padding:0 ;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: rgb(29, 60, 201);
+    display: grid;
+    place-content: center;
+}
+.board{
+    width:calc(20px * 30);    
+    height:calc(20px * 30);    
+    background-color: black;
+    border:solid;
+    position: relative;
+}
+.part , .ball{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 20px;
+    border: 2px solid white;
+    height: 20px;
+    left:100px;
+    top:100px;
+}
+.food{
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+.scoreboard{
+    font-size: 2em;
+    color:white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.head{
+    background-color: aqua;
+}
